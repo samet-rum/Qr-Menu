@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+  <div class="menu-container">
+    <h1 class="menu-title">
+        <img src="/images/transparan logo.png" alt="Logo Sol" class="logo-left">
+    </h1></h1>
+    <div class="menu-card">
+      <div class="menu-category-header" onclick="toggleCategory(0)">
+        <h2 class="menu-category-title">Ekmek Arası</h2>
+        <div class="menu-chevron"></div>
+      </div>
+      <ul class="menu-items" id="category-0">
+        <li class="menu-item"></li>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span></span>
+              <span>Yarım Tam Bakkal</span>
+            </div>
+          </li>     
+        <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Kavurma</span>
+              <span>₺150 ₺200 ₺250</span>
+            </div>
+          </li>          
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Köfte</span>
+              <span>₺100 ₺140 ₺200</span>
+            </div>
+          </li>   
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Tavuk</span>
+              <span>₺90 ₺110 ₺160</span>
+            </div>
+          </li>   
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Arnavut Ciğeri</span>
+              <span>₺90 ₺110 ₺160</span>
+            </div>
+          </li>   
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Sucuk</span>
+              <span>₺90 ₺110 ₺160</span>
+            </div>
+          </li>   
+      </ul>
+    </div>
+     <div class="menu-card">
+      <div class="menu-category-header" onclick="toggleCategory(1)">
+        <h2 class="menu-category-title">Ekmek Arası Karışıklar</h2>
+        <div class="menu-chevron"></div>
+      </div>
+      <ul class="menu-items" id="category-1">
+        <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span></span>
+              <span>Yarım Tam Bakkal</span>
+            </div>
+          </li>   
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Köfte - Tavuk</span>
+              <span>₺150 ₺200 ₺300</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Köfte - Sucuk</span>
+              <span>₺150 ₺200 ₺300</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Tavuk - Sucuk</span>
+              <span>₺130 ₺170 ₺220</span>
+            </div>
+          </li>
+      </ul>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-category-header" onclick="toggleCategory(2)">
+        <h2 class="menu-category-title">Menüler</h2>
+        <div class="menu-chevron"></div>
+      </div>
+      <ul class="menu-items" id="category-2">
+        <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Kavurma Pilav Menü</span>
+              <span>₺250</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Kavurma Patates Menü</span>
+              <span>₺250</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Kavurma Tam Menü</span>
+              <span>₺280</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Köfte Pilav Menü</span>
+              <span>₺190</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Köfte Patates Menü</span>
+              <span>₺190</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Köfte Tam Menü</span>
+              <span>₺220</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Tavuk Pilav Menü</span>
+              <span>₺160</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Tavuk Patates Menü</span>
+              <span>₺160</span>
+            </div>
+          </li>
+          <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>📷 Tavuk Tam Menü</span>
+              <span>₺190</span>
+            </div>
+          </li>
+      </ul>
+    </div>
+    
+    <div class="menu-card">
+        <div class="menu-category-header" onclick="toggleCategory(3)">
+            <h2 class="menu-category-title">Tost Çeşitleri</h2>
+            <div class="menu-chevron"></div>
+        </div>
+        <ul class="menu-items" id="category-3">
+            <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>❗Tost servisimiz 16:00'a kadardır</span>
+                  <span>Yarım Tam Bakkal</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Sanayi Tostu</span>
+                  <span>₺80 ₺100 ₺130</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Y.Karışık Tost</span>
+                  <span>₺70 ₺90 ₺120</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Karışık Tost</span>
+                  <span>₺60 ₺80 ₺110</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Sade Tost</span>
+                  <span>₺50 ₺70 ₺100</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Kavurmalı Tost</span>
+                  <span>₺150 ₺200 ₺250</span>
+                </div>
+              </li>
+        </ul>
+    </div>
+    
+    <div class="menu-card">
+        <div class="menu-category-header" onclick="toggleCategory(4)">
+          <h2 class="menu-category-title">Tabaklar</h2>
+          <div class="menu-chevron"></div>
+        </div>
+        <ul class="menu-items" id="category-4">
+            <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Çorba</span>
+                  <span>₺60</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Pilav</span>
+                  <span>₺60</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Kahvaltı Tabağı</span>
+                  <span>₺150</span>
+                </div>
+              </li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-category-header" onclick="toggleCategory(5)">
+          <h2 class="menu-category-title">Kahvaltılık Ekmek Arası</h2>
+          <div class="menu-chevron"></div>
+        </div>
+        <ul class="menu-items" id="category-5">
+            <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span></span>
+                  <span>Yarım Tam Bakkal</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Patso</span>
+                  <span>₺70 ₺100 ₺120</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span></span>
+                  <span>Gobit Ekmeği</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/image5.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Gobit(Yumurta Başına ₺10 Eklenir)</span>
+                  <span>₺50</span>
+                </div>
+              </li>
+        </ul>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-category-header" onclick="toggleCategory(6)">
+          <h2 class="menu-category-title">İçecekler</h2>
+          <div class="menu-chevron"></div>
+        </div>
+        <ul class="menu-items" id="category-6">
+            <li class="menu-item" onclick="showImage('/images/Kola-Fanta-Sprite.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Kola - Fanta - Sprite</span>
+                  <span>₺40</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/cappy.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Cappy Meyve Suyu</span>
+                  <span>₺40</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/şişekola.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Şişe Kola</span>
+                  <span>₺30</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/sariyer.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Sarıyer Kola</span>
+                  <span>₺20</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/niğdegazozu.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Niğde Gazozu</span>
+                  <span>₺30</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/şalgam.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Acılı - Acısız Şalgam</span>
+                  <span>₺30</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/meyvelisoda.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Meyveli Soda</span>
+                  <span>₺20</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/sade soda.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Sade Soda </span>
+                  <span>₺15</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/su.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Su</span>
+                  <span>₺10</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/fusetea.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Fuse Tea</span>
+                  <span>₺40</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/yayıkayran.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Yayık Ayran</span>
+                  <span>₺25</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/Tombul ayran.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Tombul Ayran</span>
+                  <span>₺20</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/Küçük ayran.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Küçük Ayran</span>
+                  <span>₺15</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/çay.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Çay</span>
+                  <span>₺10</span>
+                </div>
+              </li>
+              <li class="menu-item" onclick="showImage('/images/.jpg')">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>📷 Kahve</span>
+                  <span>₺15</span>
+                </div>
+              </li>
+        </ul>
+      </div>
+
+
+    <div class="image-modal-overlay" id="image-modal">
+      <div class="image-modal">
+        <img src="" alt="Seçilen Görsel" id="modal-image" class="modal-image">
+        <button class="close-button" onclick="closeImage()">✕</button>
+      </div>
+    </div>
+  </div>
+  <div class="social-buttons">
+    <a href="https://www.instagram.com/basgankofte/" target="_blank" class="social-icon">
+        <img src="/images/Instagram_icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.google.pl/maps/place/BA%C5%9EGAN+K%C3%96FTE+ET/@39.9495264,32.8377969,17z/data=!3m1!4b1!4m6!3m5!1s0x14d34f6bcf0739a1:0x3e7268e758decf8d!8m2!3d39.9495264!4d32.8403718!16s%2Fg%2F11nx18rbny?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="social-icon">
+        <img src="/images/googlemapss.svg" alt="Google Maps">
+    </a>
+    <button class="order-button" onclick="showContactModal()">Alo Sipariş</button>
+</div>
+
+
+
+<button id="contactBtn">İletişim Bilgileri</button>
+
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <h2>İletişim Bilgilerimiz</h2>
+        <p>Telefon: +90 552 800 19 20</p>
+        <p>Adres: Samanyolu Caddesi - Sebze Bahçeleri Caddesi köşesi, 06100 Altındağ/Ankara, Türkiye</p>
+    </div>
+</div>
+
+
+
+  <script>
+    const toggleCategory = (index) => {
+      const category = document.getElementById(`category-${index}`);
+      if (category.style.display === "block") {
+        category.style.display = "none";
+      } else {
+        category.style.display = "block";
+      }
+    };
+
+    const showImage = (imageSrc) => {
+      const modal = document.getElementById("image-modal");
+      const modalImage = document.getElementById("modal-image");
+      modalImage.src = imageSrc;
+      modal.style.display = "flex";
+    };
+
+    const closeImage = () => {
+      const modal = document.getElementById("image-modal");
+      modal.style.display = "none";
+    };
+
+    function showContactModal() {
+    document.getElementById("contactModal").style.display = "block";
+}
+
+function closeContactModal() {
+    document.getElementById("contactModal").style.display = "none";
+}
+function updateSocialPosition() {
+    const socialContainer = document.getElementById("social-container");
+    socialContainer.style.top = (window.scrollY + window.innerHeight - socialContainer.offsetHeight - 10) + "px";
+}
+
+window.addEventListener("scroll", updateSocialPosition);
+window.addEventListener("resize", updateSocialPosition);
+updateSocialPosition(); 
+
+
+document.getElementById("contactBtn").onclick = function() {
+  document.getElementById("contactModal").style.display = "block";
+}
+
+
+function closeContactModal() {
+  document.getElementById("contactModal").style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == document.getElementById("contactModal")) {
+    closeContactModal();
+  }
+}
+
+
+  </script>
